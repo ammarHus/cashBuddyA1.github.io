@@ -1,351 +1,894 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="CloudGate Consulting is company that provides
-    products and services in the software and networking field, following the latest trends in the industry.">
 
-    <meta name="author" content="Ammar alHussni">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="cashBuddy app website">
+    <meta name="author:ammar alhussni" content="">
 
-    <title>CloudGate Consulting Website</title>
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:cashBuddy" content="the official website for cashBuddy app" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Website Title -->
+    <title>cashBuddy App Website</title>
 
-    <!-- Custom fonts for this website -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 
-    <!-- font awesome update-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
 
-    <!-- Custom styles for this website -->
-    <link href="css/creative.min.css" rel="stylesheet">
-    <!-- aos ref -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-
-  </head>
-  <style>
-  /* to edit the logo of the website on the top-left corner */
-
-.Mylogo{
-	content:url("img/logo.png");
-  height:25px;
-}
-</style>
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
 
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Leno</a> -->
 
-  <body id="page-top">
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"> <img  class="Mylogo"  id="logo" alt=""></img> CloudGate Consulting</a>
-        <button style="padding:0;"class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" ></span>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#products">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#features">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#preview">PREVIEW</a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <!-- Nav bar item for investor to activate in the future  -->
+
+
+
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">INVESTORS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Invest with cashBuddy</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Investor's relationships</span></a>
+                    </div>
+                </li> -->
+
+
+
+                <!-- end of dropdown menu -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#team">TEAM</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.youtube.com/channel/UCYgmJA_dQHf0fxdljAB8K5Q">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-youtube fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://twitter.com/cashbuddy2">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
         </div>
-      </div>
-    </nav>
-
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>The Right Place To Turn Ideas Into Reality</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">CloudGate Consulting can help you achieve your goals efficently by providing various services in the software and networking areas.</p>
-
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Our Vision</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">We provide products and services that build on the collective experience of the team,
-              academic research conducted in the networking field, engagement with Telecom operators,
-               and following up on the latest trends in the industry. We work with the telecommunication Service Providers’ market across MEA,
-               Far-East, and Europe</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Why Us?</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-            <!-- <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i> -->
-            <img  class="text-primary mb-3 sr-icons"  src="img/s1.png" alt=""></img>
-              <h3 class="mb-3">Extensive Research Capabilities</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <!-- <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i> -->
-                <img  class="text-primary mb-3 sr-icons"  src="img/s2.png" style="padding-bottom:6px;padding-Top:25px;" alt=""></img>
-              <h3 class="mb-3">Accelerated Time-To-Value</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-
-                  <img  class="text-primary mb-3 sr-icons"  src="img/s3.png" alt=""></img>
-              <!-- <i class="fas fa-code-branch text-primary mb-3 sr-icons" style="font-size:60px;"></i> -->
-              <h3 class="mb-3">Up to Date Technologies</h3>
-              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-                <img  class="text-primary mb-3 sr-icons"  src="img/s4.png"  alt=""></img>
-              <!-- <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i> -->
-              <h3 class="mb-3">Deep industry knowledge</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
 
 
-    <section id="team" class="bg-dark text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Our Team</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row" >
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-
-              <img class="img-fluid "data-aos="zoom-in" src="img/chehab.jpg" alt="" style="border-radius:50%;">
-              <h3 class="mb-3"><strong>Ali Chehab</strong></h3>
-              <h5 class="mb-3">Director of Technology and Innovation</h5>
-              <p class="text-muted mb-0">Ph.D. in Electrical & Computer Engineering from the University of North Carolina at Charlotte, NC (2002).</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-                <img class="img-fluid " data-aos="zoom-in" src="img/said.jpg" alt="" style="border-radius:50%;">
-              <h3 class="mb-3"><strong>Said Al Ghazzi</strong></h3>
-                <h5 class="mb-3">Managing </br>Director</h5>
-              <p class="text-muted mb-0">Bachelor's degree in Computer and Communications Engineering from the American University of Beirut (AUB) (1993)</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-
-              <img class="img-fluid " data-aos="zoom-in" src="img/serge.jpg" alt="" style="border-radius:50%;">
-              <h3 class="mb-3"><strong>Serge Saad</strong></h3>
-                <h5 class="mb-3">Director </br>of Operations</h5>
-              <p class="text-muted mb-0">Bachelor's degree in Computer Science from Haigazian University in Beirut (1984)</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-
-              <div >
-              <img class="img-fluid " data-aos="zoom-in" src="img/ali-z.jpg" alt="" style="border-radius:50%;">
-            </div>
-              <h3 class="mb-3"><strong>Ali Zeineddine</strong></h3>
-                <h5 class="mb-3">Director of Products and Services</h5>
-              <p class="text-muted mb-0">Master’s degree in Computer Science from the American University of Beirut (AUB) (2017)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1>A MOBILE APP <br>FOR <span id="js-rotating">Banks, Shops, People</span></h1>
+                            <p class="p-large">cashBuddy is a mobile app that allows you to withdraw cash for free from any nearby shop.<br> <br>Our app will be available soon on:</p>
+                            <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>
+                            <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>
+                        </div>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/header-iphone.png" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
 
 
 
-    <section id="products">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Top Products</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
+
+    <!-- Features -->
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>ABOUT</h2>
+                    <div class="p-heading p-large">cashBuddy is the future of ATMs and peer to peer payments, our app was develped using bank-level security technologies to facilitate the lives of banks, shops and people.</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-university"></i>For Banks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-store-alt"></i>For Shops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-users"></i>For People</a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
+
+
+                <!-- Tabs Content-->
+                <div class="tab-content" id="lenoTabsContent">
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Be More Accessable</h4>
+                                                <p>Expand to new areas, regions and countires in cost effeicent manner and always be there for your clients.</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="fas fa-expand-arrows-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Take Part In A Largest ATM Network</h4>
+                                                <p>Increase the number of ATMs in your network and be present in the most rural areas.</p>
+                                            </div>
+                                            <div class="card-icon">
+                                              <i class="fas fa-share-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Save Money</h4>
+                                                <p>Pay less gain more, allow your clients to access a huge number of ATMs with a fraction of the cost.</p>
+                                            </div>
+                                            <div class="card-icon">
+                                          <i class="fas fa-money-check-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                                <!-- Image Pane -->
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="images/features-iphone-1.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card right-pane first">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-wrench"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Never Worry About Maintainenece</h4>
+                                                <p>Forget about technical problems and ATMs needing maintence every now and then.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-cogs"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Hassle Free Operation</h4>
+                                                <p>Much easier that filling up the ATM every other and handline multiple ATM operations.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-mobile-alt"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Digitize The ATM Experince</h4>
+                                                <p>In a digital age that's havely depenednt on smart phones, allow your clients to have fully digitzed hassle free experince.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="images/features-iphone-2.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="text-area">
+                                        <h3>Partner Up With Us To Take Your Business To A Whole New Level</h3>
+                                        <p>Be part of the fastest growing shop network. We partner up with shops to increase thier costumer traffice and introduce new revenue streams. <a class="turquoise" href="#contact">contact us more details</a>. Stronger Together.</p>
+                                    </div> <!-- end of text-area -->
+
+                                    <div class="icon-cards-area">
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-hand-holding-usd"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Make More Money</h4>
+                                                    <p>Make more money by Joining cashBuddy network and get introduced to new revenue streams that will boost your profits.</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-bullhorn"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">We Help You Market Your Shop</h4>
+                                                    <p>Ads are usually costy we dont only give you the chnage to advertise for your costumers for free but also bring the costumers straight to your shop cash register.</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-shoe-prints"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Get More Costumers To Enter Your Shop</h4>
+                                                    <p>Be noticed on the map and have more people know about your shop, offers and products.</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                  <i class="fas fa-store"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Less Effort Handling Daily Cash</h4>
+                                                    <p>Having a lot of cash in your cash register in the end of the day requires some serious effort, we help you deposite them in the bank and make more money by utilizing this access cash.</p>
+                                                </div>
+                                            </div>
+                                    </div> <!-- end of icon cards area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="icon-cards-area">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-shield-alt"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Safety First</h4>
+                                                <p>Your saftey is our priority, users data is highly secured using bank level security technology and is not accessable to anyone.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                            <i class="fas fa-dollar-sign"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">100% Free!</h4>
+                                                <p>Never pay extra unnecessary fees again, when withdrawing your own cash!</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-qrcode"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">One QR-Code Scan Away</h4>
+                                                <p>never search for an ATM again and walk long miles to withdraw cash we're here for you. walk to a shop show your code and get your cash instantly.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                              <i class="fas fa-user-friends"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Your Buddy Everywhere</h4>
+                                                <p>We're here for you with 24/7 costumer support, our goal is to make tour life easier.</p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of icon cards area -->
+
+                                    <div class="text-area">
+                                        <h3>Our Users Are Our Main Foucs</h3>
+                                        <p>cashBuddy App is an app that makes your daily cash transactions more secure and accessable, help us improve by giving us your feedback <a class="turquoise" href="#contact">send feedback or comments here!</a>.</p>
+                                    </div> <!-- end of text-area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="images/features-iphone-3.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div><!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+
+    <!-- Video -->
+    <div id="preview" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="cashbuddy-black">PREVIEW</h2>
+                    <div class="p-heading p-large cashbuddy-black">Know more about cashBuddy by watching our short video.</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=jkINhMIZNX4" data-effect="fadeIn">
+                                <img class="img-fluid" src="images/video-frame.jpg" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of video -->
+
+
+    <!-- Details 1 -->
+    <div id="details" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/details-1-iphone.png" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>cashBuddy Shortlisted To Join AUB Startup Acceleration Program</h3>
+                        <p>ccashBuudy team was one of the 17 teams that where chosen to join AUB's highly selective Startup Acceleration Program. Where applicants get screened and interviewed by industry and technical experts from (Oliver wyman, Beirut Digital District, Flat6Labs ..) to asses the potential in their ideas and join a 1 year acceleration program.</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">Read More</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details 2 -->
+    <div class="basic-3">
+        <div class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>cashBuddy Wins Third Runner Up In Arabnet Regional Ideathon Competition</h3>
+                            <p>During the ideation phase cashBuddy team participated in Arabnet Regional Ideathon Competition and won third runner up where around 100 startups competed.</p>
+                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">Read More</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="images/details-2-iphone.png" alt="alternative">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of details 2 -->
+
+
+    <!-- Details Lightboxes -->
+	<!-- Lightbox -->
+	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="images/details-lightbox-1.png" alt="alternative">
+			</div>
+			<div class="col-lg-6">
+				<h3>cashBuddy Shortlisted To Join AUB Startup Accelration Program</h3>
+				<hr>
+                <p>Our team competed with more than 50 teams to join AUB accelration program on Spetember 2019.</p>
+                <h4>Judging Criteria</h4>
+                <p>Teams where evaluated based on the innovation of their ideas, business feasibility and team capabilities.</p>
+                <p>Our team got interviewed by a panel of 6 industry experts coming from different backgrounds including (Consulting, software development and VC management).</p>
+				<!-- <table>
+					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
+				</table> -->
+				<!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a>  -->
+        <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="images/details-lightbox-2.png" alt="alternative">
+			</div>
+			<div class="col-lg-6">
+				<h3>Arabnet Regional Ideathon Competition</h3>
+				<hr>
+                <p>We where in early ideation phase when we joined the competition our idea was lees than one month old. However even though we were at a timing disadvantage compared to our peers participating in the competition because of the lack of research and validation we had, we managed to win the third runner up prize.</p>
+                <h4>About The Competition</h4>
+                <p>Arabnet Regional Ideathon Competition was hosted in Lebanon in mid June 2019 where around 100 startups competed with their ideas.</p>
+
+				<!-- <table>
+					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
+				</table>
+				<a class="btn-solid-reg" href="#your-link">DETAILS</a>  -->
+        <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
 
 
 
-            <i class="fas fa-network-wired text-primary mb-3 "data-aos="zoom-in-left"  style="font-size:60px;"></i>
 
 
 
-              <h3 class="mb-3">Audit & Compliance Management (ACM)</h3>
-              <p class="text-muted mb-0">Part of our configuration management stack,
-                ACM is an integrated and comprehensive tool set that enables four core
-                capabilities across the device life cycle within the network.
-                The product is developed to cater for networks at telecom operators and multinational companies to provide:<br>
-                Compliance & Remediation Management, Report Management, On-boarding & Inventory Management and Policy Management   </p>
-            </div>
-          </div>
-
-
-          <div class="col-lg-6 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-
-              <i class="fas fa-server text-primary mb-3 " data-aos="zoom-in-right"style="font-size:60px;"></i>
-              <h3 class="mb-3">Network Monitoring & Management (NMM)</h3>
-              <p class="text-muted mb-0">Also part of the configuration management stack,
-                NMS is an easy-to-use and affordable network monitoring solution that monitors
-                 network devices such as routers, switches, load balancers, controllers, firewalls, VMs,
-                  and servers with a future-proof design to accommodate the growth in IoT devices.
-                   Network monitoring is crucial for businesses that rely on networks for their operations.</p>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-
-
-    <section class="bg-dark text-white" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto text-center" style="padding-bottom:50px;">
-            <h2 class="section-heading text-white">Our Services</h2>
-              <hr class="my-4">
-
-          </div>
-
-
-          <div class="col-lg-8 mx-auto text-center" style="padding-bottom:100px;">
-            <h2 class="section-heading text-white">DevOps Integration Services (DevOps)</h2>
-
-            <p class="text-faded mb-4">NFV/SDN Integration was conceived to address challenges
-              facing Telecom operators in the Telco Cloud space: it employs new capabilities
-              for agile integration across hybrid environments from Cloud to Edge,
-              and it supports end-to-end API lifecycle from design to development, deployment, and management.</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Start Now!</a>
-          </div>
-
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Orchestration & Managed Services (OMS)</h2>
-
-            <p class="text-faded mb-4">This generally covers business-critical
-              services and functions that are essential to the business and it requires
-              the operator’s ability to manage the client’s solution “end-to-end”,
-               which entails offering self-service and active-monitoring features to
-               the provided solution and proactively reporting faults and incidents,
-               while ensuring that restoration happens within the committed SLAs.
-               Our DevOps services for orchestration and managed services allow operators
-               to compete with over-the-top suppliers. Our offerings in this domain span the areas of strategy,
-                planning, acquisition, set-up, build, monitoring, and remediation to provide integrated SLAs
-                 for both cloud services and network services for a variety of
-                 applications from automation and orchestration to managed voice & data,
-                 LAN/WAN, Security, disaster recovery, mobility, and virtualization in DC & Cloud.</p>
-              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Start Now!</a>
-          </div>
 
 
 
-        </div>
-      </div>
-    </section>
 
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
-            <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-linkedin fa-3x mb-3 sr-contact"></i>
 
-          <p>  <a href="https://www.linkedin.com/company/cloud-gate-consulting-llc">Follow us on Linkedin</a></p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="mailto:your-email@your-domain.com">alic@CloudGate.Consulting</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Custom scripts for this website -->
-    <script src="js/creative.min.js"></script>
-    <script>
-      AOS.init();
-    </script>
 
-  </body>
 
+
+
+
+
+    <div id="team" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="cashbuddy-black">TEAM</h2>
+                    <div class="p-heading p-large cashbuddy-black">Meet the team behind cashBuddy.</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+
+
+
+
+
+
+
+
+
+
+            <!-- Testimonials -->
+            <div class="slider-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <!-- Card Slider -->
+                            <div class="slider-container">
+                                <div class="swiper-container card-slider">
+                                    <div class="swiper-wrapper">
+
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <img class="card-image" src="images/testimonial-1.jpg" alt="alternative">
+                                                <div class="card-body">
+                                                      <p class="testimonial-author">Ammar Alhussni - Software Engineer & Strategist </p>
+                                                      <br>
+
+                                                    <p class="testimonial-text">Ammar is a senior engineering student at AUB he combines both entrepreneurial and corporate experiences. He worked with Cherpa, a leading Lebanese startup and interned as a software analyst where he held meetings with clients and built their projects specifications.</p>
+
+                                                </div>
+                                            </div>
+                                        </div> <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
+                                                <div class="card-body">
+                                                      <p class="testimonial-author">Waleed Jimma - Business & Financial Analyst</p>
+                                                      <br>
+                                                    <p class="testimonial-text">Waleed is a senior industrial engineering student at AUB focusing on financial analysis, he has previously worked with a startup based in Boston University’s Accelerator and interned at sizable asset management firm in Boston.</p>
+
+                                                </div>
+                                            </div>
+                                        </div> <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <img class="card-image" src="images/testimonial-3.jpg" alt="alternative">
+                                                <div class="card-body">
+                                                      <p class="testimonial-author">Jad Younes - Back-end Software Engineer</p>
+                                                      <br>
+                                                    <p class="testimonial-text">Jad is a senior engineering student at AUB focusing on networking and back-end server development he has previously worked on developing a mobile app for a renowned international retailer that will be used by thousands of users across the region.</p>
+
+                                                </div>
+                                            </div>
+                                        </div> <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
+                                                <div class="card-body">
+                                                      <p class="testimonial-author">Jad Jundi  - Mobile App Developer</p>
+                                                      <br>
+                                                    <p class="testimonial-text">Jad is a senior engineering student at AUB focusing on mobile app development and has previously worked on developing several Android apps along with Google Maps APIs integration and customization.</p>
+
+                                                </div>
+                                            </div>
+                                        </div> <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <img class="card-image" src="images/testimonial-5.jpg" alt="alternative">
+                                                <div class="card-body">
+                                                      <p class="testimonial-author">Ali Chehab - Technical Consultant</p>
+                                                      <br>
+                                                    <p class="testimonial-text">Ali holds a PhD from the University of North Carolina with 20+ years of teaching and research experience and is currently working as a full time electrical and computer engineering professor in AUB. </p>
+
+                                                </div>
+                                            </div>
+                                        </div> <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+
+
+
+                                    </div> <!-- end of swiper-wrapper -->
+
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <!-- end of add arrows -->
+
+                                </div> <!-- end of swiper-container -->
+                            </div> <!-- end of slider-container -->
+                            <!-- end of card slider -->
+
+                        </div> <!-- end of col -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </div> <!-- end of slider-1 -->
+            <!-- end of testimonials --> -->
+
+
+
+
+
+
+
+
+
+
+
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Statistics -->
+    <div class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Counter -->
+                    <div id="counter">
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="631">1</div>
+                            <p class="counter-info">Cups Of Coffee</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="85">1</div>
+                            <p class="counter-info">Cigarette Breaks</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="59">1</div>
+                            <p class="counter-info">Code Files</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="127">1</div>
+                            <p class="counter-info">Overnights</p>
+                        </div>
+                    </div>
+                    <!-- end of counter -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of statistics -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>CONTACT</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address">Don't hesitate to sign up for joining our pool of beta users by filling the form below<br> or to contact us if you have any inquiries</li>
+                        <li><i class="fas fa-map-marker-alt"></i>5th Floor, OXY Engineering Building, AUB, Beirut, Lebanon</li><br>
+                        <!-- <li><i class="fas fa-phone"></i><a class="blue" href="tel:003024630820">+961 71775383</a></li> -->
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:cashbuddy.media@gmail.com">cashbuddy.media@gmail.com</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Name</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Your message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Leno's stated conditions in <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
+                            <div class="help-block with-errors"></div>
+                        </div> -->
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>About cashBuddy</h4>
+                        <p>Our aim is to increase money circulation by saving money on banks and allowing shops to add new revenue streams.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Our business partners <a class="turquoise" href="#your-link">startupguide.com</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms & Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy Policy</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <!-- <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span> -->
+
+                        <span class="fa-stack">
+                            <a href="https://www.youtube.com/channel/UCYgmJA_dQHf0fxdljAB8K5Q">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span>
+
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/cashbuddy2">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+
+                        <!-- <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span> -->
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © cashBuddy </p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
 </html>
